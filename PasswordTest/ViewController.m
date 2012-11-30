@@ -23,8 +23,8 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    PasswordViewController *viewController = [[PasswordViewController alloc
-                                               ] init];
+    PasswordViewController *viewController = [[PasswordViewController alloc]
+                                              initWithNibName:@"PasswordViewController" bundle:nil];
     //animated は NO が良いかも
     [self presentViewController:viewController animated:YES completion:nil];
     [viewController release];
